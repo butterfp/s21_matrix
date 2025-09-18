@@ -9,6 +9,8 @@
 #define S21_ERROR 1
 #define SUCCESS 1
 #define FAILURE 0
+#define EPS 1e-6
+
 
 
 typedef struct matrix_struct {
@@ -29,6 +31,8 @@ int s21_transpose(matrix_t *A, matrix_t *result);
 int s21_calc_complements(matrix_t *A, matrix_t *result);
 int s21_determinant(matrix_t *A, double *result);
 int s21_inverse_matrix(matrix_t *A, matrix_t *result);
+
+int s21_eq_size(matrix_t *A, matrix_t *B);
 
 
 #endif
