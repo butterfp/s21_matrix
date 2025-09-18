@@ -3,8 +3,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
-
+#define S21_OK    0
+#define S21_ERROR 1
 #define SUCCESS 1
 #define FAILURE 0
 
