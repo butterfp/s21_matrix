@@ -34,7 +34,7 @@ int s21_create_matrix(int rows, int columns, matrix_t *result) {
 }
 
 void s21_remove_matrix(matrix_t *A) {
-    if (!A || !A->matrix) return S21_ERROR;
+    if (!A || !A->matrix) return;
 
     for (int i = 0; i < A->rows; i++) {
         free(A->matrix[i]);
